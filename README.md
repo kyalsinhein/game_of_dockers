@@ -13,61 +13,71 @@ This script simulates a **distributed file processing system** where:
 
 ## 📁 Project Structure
 
+After cloning, your structure will look like:
 ```text
 /home/YOUR_USERNAME/
-├── game_of_dockers.sh        # Main script file
-├── docker-test/              # Test files directory
-│   ├── Docker1/              # Files for first container
-│   │   ├── file1.txt        # Sorted by size (smallest first)
-│   │   └── file2.txt
-│   ├── Docker2/              # Files for second container
-│   │   ├── file3.txt        # First-come-first-served order
-│   │   └── file4.txt
-│   └── Docker3/              # Files for third container
-│       ├── file5.txt        # Sorted by size (smallest first)
-│       └── file6.txt
-└── GAME_OF_DOCKERS.txt      # Output file (created by script)
+└── game_of_dockers/         # Project folder (created by git clone)
+    ├── game_of_dockers.sh   # Main script file
+    ├── docker-test/         # Test files directory (create this)
+    │   ├── Docker1/         # Files for first container
+    │   │   ├── file1.txt   # Sorted by size (smallest first)
+    │   │   └── file2.txt
+    │   ├── Docker2/         # Files for second container
+    │   │   ├── file3.txt   # First-come-first-served order
+    │   │   └── file4.txt
+    │   └── Docker3/         # Files for third container
+    │       ├── file5.txt   # Sorted by size (smallest first)
+    │       └── file6.txt
+    ├── README.md           # This documentation
+    └── GAME_OF_DOCKERS.txt # Output file (created when run)
 ```
-
 ## 🚀 Quick Start
-
-### 1. Clone or Download
+# Step 1: Clone Repository
 ```bash
 cd ~
-# Make sure you're in home: pwd should show /home/YOUR_USERNAME
 git clone <your-repo-url>
+# Creates: ~/game_of_dockers/ folder
 ```
-### **2. Navigate to Project Folder**
+
+# Step 2: Navigate to Project
 ```bash
 cd ~/game_of_dockers
 ```
 
-### **3. Update 3 lines in script**
-
+# Step 3: Configure Script Paths
 ```bash
-nano ~/game_of_dockers.sh
-# Change lines 6-8 to:
+# Edit the script
+nano game_of_dockers.sh
+
+# Change lines 6-8 to USE RELATIVE PATHS:
 FILES_CONTAINER1="./docker-test/Docker1"
 FILES_CONTAINER2="./docker-test/Docker2"
 FILES_CONTAINER3="./docker-test/Docker3"
+
+# Save: Ctrl+X, Y, Enter
 ```
 
-### **4. Create Test Filest**
+## Step 4: Create Test Files INSIDE Project Folder
 ```bash
-echo "Text from Container 1 - File 1" > ~/docker-test/Docker1/file1.txt
-echo "Text from Container 1 - File 2" > ~/docker-test/Docker1/file2.txt
-echo "Text from Container 2 - File 1" > ~/docker-test/Docker2/file3.txt
-echo "Text from Container 2 - File 2" > ~/docker-test/Docker2/file4.txt
-echo "Text from Container 3 - File 1" > ~/docker-test/Docker3/file5.txt
-echo "Text from Container 3 - File 2" > ~/docker-test/Docker3/file6.txt
+# Create folder structure INSIDE project folder
+mkdir -p docker-test/Docker{1,2,3}
+
+# Create test files (minimum 2 per container)
+echo "Text from Container 1 - File 1" > docker-test/Docker1/file1.txt
+echo "Text from Container 1 - File 2" > docker-test/Docker1/file2.txt
+echo "Text from Container 2 - File 1" > docker-test/Docker2/file3.txt
+echo "Text from Container 2 - File 2" > docker-test/Docker2/file4.txt
+echo "Text from Container 3 - File 1" > docker-test/Docker3/file5.txt
+echo "Text from Container 3 - File 2" > docker-test/Docker3/file6.txt
 ```
 
-###  **4. Run the script**
+## Step 5: Run the Script
 ```bash
-# Make sure you're in project folder
-cd ~/game_of_dockers
-chmod +x gameofdockers.sh
-sudo ./gameofdockers.sh
+# Make script executable
+chmod +x game_of_dockers.sh
+
+# Run from project folder
+sudo ./game_of_dockers.sh
 ```
 
 ## 📋 What Happens
