@@ -58,10 +58,8 @@ FILES_CONTAINER3="./docker-test/Docker3"
 ```
 Save: Ctrl+X, Y, Enter. 
 ```bash
-#Go to project folder
-cd /home/YOUR_USERNAME/game_of_dockers
-#Then type
-mkdir -p ~/docker-test/Docker{1,2,3}
+#Then create these folders. 
+mkdir -p ~/game_of_dockers/docker-test/Docker{1,2,3}
 ```
 
 ## Step 4: Create Test Files INSIDE Project Folder and paste these text to each file (!IMPORTANT)
