@@ -52,9 +52,9 @@ sudo ./gameofdockers.sh
 ## 📋 What Happens
 1. Countdown – Script starts after 3 seconds
 2. Containers Created – Three Ubuntu containers named:
-  - first_container
-  - second_container
-  - third_container
+   - first_container
+   - second_container
+   - third_container
 
 3. Files Copied – Your local files are copied into each container
 4. File Listing – Displays files from each container (sorted by size)
