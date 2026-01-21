@@ -32,19 +32,19 @@ After cloning, your structure will look like:
     └── GAME_OF_DOCKERS.txt # Output file (created when run)
 ```
 ## 🚀 Quick Start
-# Step 1: Clone Repository
+## Step 1: Clone Repository
 ```bash
 cd ~
 git clone https://github.com/kyalsinhein/game_of_dockers.git
 # Creates: ~/game_of_dockers/ folder
 ```
 
-# Step 2: Navigate to Project
+## Step 2: Navigate to Project
 ```bash
 cd ~/game_of_dockers
 ```
 
-# Step 3: Configure Script Paths (!IMPORTANT)
+## Step 3: Configure Script Paths (!IMPORTANT)
 ```bash
 # Edit the script
 nano game_of_dockers.sh
@@ -57,7 +57,7 @@ FILES_CONTAINER3="./docker-test/Docker3"
 # Save: Ctrl+X, Y, Enter
 ```
 
-# Step 4: Create Test Files INSIDE Project Folder and paste these text to each file (!IMPORTANT)
+## Step 4: Create Test Files INSIDE Project Folder and paste these text to each file (!IMPORTANT)
 ```bash
 nano  ~/game_of_dockers/docker-test/Docker1/file1.txt
 
