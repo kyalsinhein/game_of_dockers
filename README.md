@@ -185,17 +185,20 @@ And you may make revelations that cost you dearly only to have people look at yo
 ## 🧹 Cleanup
 # Remove Docker containers
 ```bash
-# Remove Docker containers
-docker rm -f first_container second_container third_container
+# Go to project folder
+cd ~/game_of_dockers
 
-# Remove output file
+# 1. Remove Docker containers
+docker rm -f first_container second_container third_container 2>/dev/null
+
+# 2. Remove output file (in project folder)
 rm -f GAME_OF_DOCKERS.txt
 
-# Remove test files (optional)
-rm -rf ~/docker-test
+# 3. Remove test files (IN PROJECT FOLDER)
+rm -rf docker-test
 
-# Clean Docker system (optional)
-docker system prune -a -f
+# 4. Optional: Clean Docker system
+docker system prune -a -f 2>/dev/null
 ```
 
 ### 👤 Author
