@@ -44,5 +44,5 @@ sudo ./gameofdockers.sh
 - Permission denied? sudo usermod -aG docker $USER (then logout/login)
 - Path errors? Check Step 2 paths are correct
 
-👤 Author
+### 👤 Author
 Kyal Sin Hein 
