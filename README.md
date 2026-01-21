@@ -199,6 +199,11 @@ rm -rf docker-test
 
 # 4. Optional: Clean Docker system
 docker system prune -a -f 2>/dev/null
+
+# 5. Remove project folder
+cd ~
+rm -rf ~/game_of_dockers
+
 ```
 
 ### 👤 Author
