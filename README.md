@@ -14,23 +14,32 @@ This script simulates a **distributed file processing system** where:
 ## 📁 Project Structure
 
 ```text
-~/docker-test/
-├── Docker1/file1.txt
-├── Docker2/file2.txt
-└── Docker3/file3.txt
+/home/YOUR_USERNAME/
+├── game_of_dockers.sh        # Main script file
+├── docker-test/              # Test files directory
+│   ├── Docker1/              # Files for first container
+│   │   ├── file1.txt        # Sorted by size (smallest first)
+│   │   └── file2.txt
+│   ├── Docker2/              # Files for second container
+│   │   ├── file3.txt        # First-come-first-served order
+│   │   └── file4.txt
+│   └── Docker3/              # Files for third container
+│       ├── file5.txt        # Sorted by size (smallest first)
+│       └── file6.txt
+└── GAME_OF_DOCKERS.txt      # Output file (created by script)
 ```
 
 ## 🚀 Quick Start
 
 ### 1. Clone or Download
 ```bash
+cd ~
+# Make sure you're in home: pwd should show /home/YOUR_USERNAME
 git clone <your-repo-url>
-cd <repo-folder>
 ```
 
 ### **2. Create test files**
 ```bash
-mkdir -p ~/docker-test/Docker{1,2,3}
 echo "Text from Container 1 - File 1" > ~/docker-test/Docker1/file1.txt
 echo "Text from Container 1 - File 2" > ~/docker-test/Docker1/file2.txt
 echo "Text from Container 2 - File 1" > ~/docker-test/Docker2/file3.txt
@@ -41,8 +50,11 @@ echo "Text from Container 3 - File 2" > ~/docker-test/Docker3/file6.txt
 
 ### **3. Update 3 lines in script**
 
-Open gameofdockers.sh and change lines 6-8:
-
+Open game_of_dockers.sh 
+```bash
+nano ~/game_of_dockers.sh
+```
+and change lines 6-8:
 ```bash
 FILES_CONTAINER1="/home/YOUR_USERNAME/docker-test/Docker1"
 FILES_CONTAINER2="/home/YOUR_USERNAME/docker-test/Docker2"
@@ -83,14 +95,19 @@ sudo ./gameofdockers.sh
 - Path errors? Check Step 2 paths are correct
 
 ## 🧹 Cleanup
-# 1. Stop and remove old containers
-docker rm -f first_container second_container third_container 2>/dev/null
+# Remove Docker containers
+```bash
+# Remove Docker containers
+docker rm -f first_container second_container third_container
 
-# 2. Remove output file
+# Remove output file
 rm -f GAME_OF_DOCKERS.txt
 
-# 3. Run script again
-sudo ./game_of_dockers.sh
+# Remove test files (optional)
+rm -rf ~/docker-test
+
+# Clean Docker system (optional)
+docker system prune -a -f
 ```
 
 ### 👤 Author
