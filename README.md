@@ -142,7 +142,7 @@ chmod +x game_of_dockers.sh
 sudo ./game_of_dockers.sh
 ```
 
-## 📋 What Happens
+## 📋 What Happens When You Run The Script
 1. Countdown – Script starts after 3 seconds
 2. Containers Created – Three Ubuntu containers named:
    - first_container
