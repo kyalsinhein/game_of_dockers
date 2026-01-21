@@ -64,11 +64,11 @@ mkdir -p ~/game_of_dockers/docker-test/Docker{1,2,3}
 
 ## Step 4: Create Test Files INSIDE Project Folder and paste these text to each file (!IMPORTANT)
 
-# Make file creating script executable
+## Make file creating script executable
 ```bash
 chmod +x create_literary_files.sh
 ```
-# Then, run it
+## Then, run it
 ```bash
 ./create_literary_files.sh
 ```
