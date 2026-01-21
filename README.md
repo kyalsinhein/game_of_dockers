@@ -46,7 +46,6 @@ cd ~/game_of_dockers
 
 ## Step 3:  Create Project Directory Structure
 ```bash
-#Then create these folders. 
 mkdir -p ~/game_of_dockers/docker-test/Docker{1,2,3}
 ```
 
