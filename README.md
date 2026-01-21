@@ -30,13 +30,16 @@ cd <repo-folder>
 
 ### **2. Create test files**
 ```bash
-mkdir -p ~/docker-test/Docker{1,2,3}
-echo "Test from Container 1" > ~/docker-test/Docker1/file1.txt
-echo "Test from Container 2" > ~/docker-test/Docker2/file2.txt
-echo "Test from Container 3" > ~/docker-test/Docker3/file3.txt
+echo "Text from Container 1 - File 1" > ~/docker-test/Docker1/file1.txt
+echo "Text from Container 1 - File 2" > ~/docker-test/Docker1/file2.txt
+echo "Text from Container 2 - File 1" > ~/docker-test/Docker2/file3.txt
+echo "Text from Container 2 - File 2" > ~/docker-test/Docker2/file4.txt
+echo "Text from Container 3 - File 1" > ~/docker-test/Docker3/file5.txt
+echo "Text from Container 3 - File 2" > ~/docker-test/Docker3/file6.txt
 ```
 
 ### **3. Update 3 lines in script**
+
 Open gameofdockers.sh and change lines 6-8:
 
 ```bash
@@ -79,10 +82,14 @@ sudo ./gameofdockers.sh
 - Path errors? Check Step 2 paths are correct
 
 ## 🧹 Cleanup
-To remove containers and files created by the script:
-```bash
-docker rm -f first_container second_container third_container
+# 1. Stop and remove old containers
+docker rm -f first_container second_container third_container 2>/dev/null
+
+# 2. Remove output file
 rm -f GAME_OF_DOCKERS.txt
+
+# 3. Run script again
+sudo ./game_of_dockers.sh
 ```
 
 ### 👤 Author
