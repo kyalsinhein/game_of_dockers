@@ -12,7 +12,7 @@ echo "Test from Container 2" > ~/docker-test/Docker2/file2.txt
 echo "Test from Container 3" > ~/docker-test/Docker3/file3.txt
 ```
 
-### ***2. Update 3 lines in script
+### **2. Update 3 lines in script
 Open gameofdockers.sh and change lines 6-8:
 
 ```bash
