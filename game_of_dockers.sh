@@ -1,13 +1,9 @@
 #!/bin/bash
 
-# ============================================================
-# USER CONFIGURATION - CHANGE THESE PATHS BEFORE RUNNING
-# ============================================================
-# Replace these paths with your actual file locations
-FILES_CONTAINER1="/home/YOUR_USERNAME/docker-test/Docker1"  # <-- CHANGE THIS
-FILES_CONTAINER2="/home/YOUR_USERNAME/docker-test/Docker2"  # <-- CHANGE THIS  
-FILES_CONTAINER3="/home/YOUR_USERNAME/docker-test/Docker3"  # <-- CHANGE THIS
-# ============================================================
+FILES_CONTAINER1="./docker-test/Docker1"
+FILES_CONTAINER2="./docker-test/Docker2"
+FILES_CONTAINER3="./docker-test/Docker3"
+
 
 echo
 echo
