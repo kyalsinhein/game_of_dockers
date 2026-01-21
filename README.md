@@ -46,11 +46,11 @@ cd ~/game_of_dockers
 
 ## Step 3: Configure Script Paths (!IMPORTANT)
 
-# Edit the script
+## Edit the script
 ```bash
 nano game_of_dockers.sh
 ```
-# Change lines 6-8 to USE RELATIVE PATHS:
+## Change lines 6-8 to USE RELATIVE PATHS:
 ```bash
 FILES_CONTAINER1="./docker-test/Docker1"
 FILES_CONTAINER2="./docker-test/Docker2"
@@ -63,7 +63,7 @@ mkdir -p ~/docker-test/Docker{1,2,3}
 
 ## Step 4: Create Test Files INSIDE Project Folder and paste these text to each file (!IMPORTANT)
 
-# For Docker 1
+## For Docker 1
 ```bash
 nano  ~/game_of_dockers/docker-test/Docker1/file1.txt
 ```
@@ -88,7 +88,7 @@ That's the worst, I think. When the secret stays locked within not for want of a
 ```
 Save: Ctrl+X, Y, Enter
 
-# For Docker 2
+## For Docker 2
 ```bash
 nano  ~/game_of_dockers/docker-test/Docker2/file3.txt
 ```
@@ -109,7 +109,7 @@ And you really will have to make it through that violent, metaphysical, symbolic
 ```
 Save: Ctrl+X, Y, Enter
 
-# For Docker 3
+## For Docker 3
 ```bash
 nano  ~/game_of_dockers/docker-test/Docker3/file5.txt
 ```
