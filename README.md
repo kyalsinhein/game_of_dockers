@@ -123,7 +123,7 @@ Walk through the storm, step by step.
 Save: Ctrl+X, Y, Enter
 
 ## Step 5: Run the Script
-To run the script the current path need to be like this (type pwd to look current location)
+To run the script the current path need to be like this (type "pwd" to look current location)
 ```bash
 /home/YOUR_USERNAME/game_of_dockers
 ```
