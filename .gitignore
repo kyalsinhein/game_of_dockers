@@ -1,0 +1,10 @@
+# System files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.log
+
+# Keep our sample output
+# !GAME_OF_DOCKERS.txt
