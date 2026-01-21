@@ -49,7 +49,7 @@ cd ~/game_of_dockers
 mkdir -p ~/game_of_dockers/docker-test/Docker{1,2,3}
 ```
 
-## Step 4: Create Test Files INSIDE Project Folder and paste these text to each file (!IMPORTANT)
+## Step 4: Create the Literary Files.
 
 Make file creating script executable
 ```bash
