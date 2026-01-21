@@ -44,19 +44,7 @@ git clone https://github.com/kyalsinhein/game_of_dockers.git
 cd ~/game_of_dockers
 ```
 
-## Step 3: Configure Script Paths (!IMPORTANT)
-
-Edit the script
-```bash
-nano game_of_dockers.sh
-```
-Change lines 6-8 to USE RELATIVE PATHS:
-```bash
-FILES_CONTAINER1="./docker-test/Docker1"
-FILES_CONTAINER2="./docker-test/Docker2"
-FILES_CONTAINER3="./docker-test/Docker3"
-```
-Save: Ctrl+X, Y, Enter. 
+## Step 3:  Create Project Directory Structure
 ```bash
 #Then create these folders. 
 mkdir -p ~/game_of_dockers/docker-test/Docker{1,2,3}
