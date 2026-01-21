@@ -37,12 +37,22 @@ cd ~
 # Make sure you're in home: pwd should show /home/YOUR_USERNAME
 git clone <your-repo-url>
 ```
-### **2. Create folder structure in home directory**
+### **2. Navigate to Project Folder**
 ```bash
-mkdir -p ~/docker-test/Docker{1,2,3}
+cd ~/game_of_dockers
 ```
 
-### **3. Create test files**
+### **3. Update 3 lines in script**
+
+```bash
+nano ~/game_of_dockers.sh
+# Change lines 6-8 to:
+FILES_CONTAINER1="./docker-test/Docker1"
+FILES_CONTAINER2="./docker-test/Docker2"
+FILES_CONTAINER3="./docker-test/Docker3"
+```
+
+### **4. Create Test Filest**
 ```bash
 echo "Text from Container 1 - File 1" > ~/docker-test/Docker1/file1.txt
 echo "Text from Container 1 - File 2" > ~/docker-test/Docker1/file2.txt
@@ -52,22 +62,10 @@ echo "Text from Container 3 - File 1" > ~/docker-test/Docker3/file5.txt
 echo "Text from Container 3 - File 2" > ~/docker-test/Docker3/file6.txt
 ```
 
-### **4. Update 3 lines in script**
-
-Open game_of_dockers.sh 
-```bash
-nano ~/game_of_dockers.sh
-```
-and change lines 6-8:
-```bash
-FILES_CONTAINER1="/home/YOUR_USERNAME/docker-test/Docker1"
-FILES_CONTAINER2="/home/YOUR_USERNAME/docker-test/Docker2"
-FILES_CONTAINER3="/home/YOUR_USERNAME/docker-test/Docker3"
-```
-Replace YOUR_USERNAME with your username (run whoami to check)
-
 ###  **4. Run the script**
 ```bash
+# Make sure you're in project folder
+cd ~/game_of_dockers
 chmod +x gameofdockers.sh
 sudo ./gameofdockers.sh
 ```
