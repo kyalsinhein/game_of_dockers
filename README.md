@@ -130,7 +130,6 @@ To run the script the current path need to be like this (type pwd to look curren
 After that,
 ```bash
 # Make script executable
-cd game_of_dockers
 chmod +x game_of_dockers.sh
 
 # Run from project folder
