@@ -4,9 +4,9 @@
 # USER CONFIGURATION - CHANGE THESE PATHS BEFORE RUNNING
 # ============================================================
 # Replace these paths with your actual file locations
-FILES_CONTAINER1="/path/to/your/Docker1/files"  # <-- CHANGE THIS
-FILES_CONTAINER2="/path/to/your/Docker2/files"  # <-- CHANGE THIS  
-FILES_CONTAINER3="/path/to/your/Docker3/files"  # <-- CHANGE THIS
+FILES_CONTAINER1="/home/YOUR_USERNAME/docker-test/Docker1"  # <-- CHANGE THIS
+FILES_CONTAINER2="/home/YOUR_USERNAME/docker-test/Docker2"  # <-- CHANGE THIS  
+FILES_CONTAINER3="/home/YOUR_USERNAME/docker-test/Docker3"  # <-- CHANGE THIS
 # ============================================================
 
 echo
@@ -47,39 +47,39 @@ sudo docker container run -itd --name=third_container ubuntu
 echo "Third container created and run!"
 echo
 
-#Copy files to each containers
+#Copy files to each containers - FIXED PATHS
 echo "Copying Files To Each Container"
 echo "==============================="
 echo "Copying files from: $FILES_CONTAINER1"
-sudo docker cp "$FILES_CONTAINER1" first_container:/root/
+sudo docker cp "$FILES_CONTAINER1" first_container:/root/Docker1/
 echo "Copying files from: $FILES_CONTAINER2"
-sudo docker cp "$FILES_CONTAINER2" second_container:/root/
+sudo docker cp "$FILES_CONTAINER2" second_container:/root/Docker2/
 echo "Copying files from: $FILES_CONTAINER3"
-sudo docker cp "$FILES_CONTAINER3" third_container:/root/
+sudo docker cp "$FILES_CONTAINER3" third_container:/root/Docker3/
 echo
 
-#Display Sorted Files
+#Display Sorted Files - FIXED PATHS
 echo "Files From First Container (Sorted By Smaller to Larger)"
 echo "========================================================"
-sudo docker exec first_container sh -c "cd /root/ && find Docker1 -maxdepth 1 -type f -exec du -b {} + | sort -n"
+sudo docker exec first_container sh -c "cd /root/Docker1/ && find . -maxdepth 1 -type f -exec du -b {} + | sort -n"
 echo
 echo "Files From Second Container (First Come First Served)"
 echo "====================================================="
-sudo docker exec second_container sh -c "cd /root/ && ls -l Docker2 --block-size=1 | awk '{if (NR>1) printf \"%s\\t./%s\\n\", \$5, \$9}'"
+sudo docker exec second_container sh -c "cd /root/Docker2/ && ls -l --block-size=1 | awk '{if (NR>1) printf \"%s\\t./%s\\n\", \$5, \$9}'"
 echo
 echo "Files From Third Container (Sorted By Smaller to Larger)"
 echo "========================================================"
-sudo docker exec third_container sh -c "cd /root/ && find Docker3 -maxdepth 1 -type f -exec du -b {} + | sort -n"
+sudo docker exec third_container sh -c "cd /root/Docker3/ && find . -maxdepth 1 -type f -exec du -b {} + | sort -n"
 echo
 
-# Define and populate the array for first_container
-readarray -t container1 < <(sudo docker exec first_container sh -c "cd /root/ && find Docker1 -maxdepth 1 -type f -exec du -b {} + | sort -n | awk -F/ '{print \$NF}'")
+# Define and populate the array for first_container - FIXED PATHS
+readarray -t container1 < <(sudo docker exec first_container sh -c "cd /root/Docker1/ && find . -maxdepth 1 -type f -exec du -b {} + | sort -n | awk -F/ '{print \$NF}'")
 
-# Define and populate the array for second_container
-readarray -t container2 < <(sudo docker exec second_container sh -c "cd /root/ && ls -1 Docker2")
+# Define and populate the array for second_container - FIXED PATHS
+readarray -t container2 < <(sudo docker exec second_container sh -c "cd /root/Docker2/ && ls -1")
 
-# Define and populate the array for third_container
-readarray -t container3 < <(sudo docker exec third_container sh -c "cd /root/ && find Docker3 -maxdepth 1 -type f -exec du -b {} + | sort -n | awk -F/ '{print \$NF}'")
+# Define and populate the array for third_container - FIXED PATHS
+readarray -t container3 < <(sudo docker exec third_container sh -c "cd /root/Docker3/ && find . -maxdepth 1 -type f -exec du -b {} + | sort -n | awk -F/ '{print \$NF}'")
 
 # Declare final file name
 final_file="GAME_OF_DOCKERS.txt"
