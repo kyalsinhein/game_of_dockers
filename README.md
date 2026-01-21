@@ -22,7 +22,7 @@ FILES_CONTAINER3="/home/YOUR_USERNAME/docker-test/Docker3"
 ```
 Replace YOUR_USERNAME with your username (run whoami to check)
 
-###  ***3. Run the script
+###  **3. Run the script
 ```bash
 chmod +x gameofdockers.sh
 sudo ./gameofdockers.sh
