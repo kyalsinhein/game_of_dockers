@@ -51,11 +51,11 @@ echo
 echo "Copying Files To Each Container"
 echo "==============================="
 echo "Copying files from: $FILES_CONTAINER1"
-sudo docker cp "$FILES_CONTAINER1" first_container:/root/Docker1/
+sudo docker cp "$FILES_CONTAINER1/." first_container:/root/Docker1/
 echo "Copying files from: $FILES_CONTAINER2"
-sudo docker cp "$FILES_CONTAINER2" second_container:/root/Docker2/
+sudo docker cp "$FILES_CONTAINER2/." second_container:/root/Docker2/
 echo "Copying files from: $FILES_CONTAINER3"
-sudo docker cp "$FILES_CONTAINER3" third_container:/root/Docker3/
+sudo docker cp "$FILES_CONTAINER3/." third_container:/root/Docker3/
 echo
 
 #Display Sorted Files - FIXED PATHS
@@ -83,6 +83,8 @@ readarray -t container3 < <(sudo docker exec third_container sh -c "cd /root/Doc
 
 # Declare final file name
 final_file="GAME_OF_DOCKERS.txt"
+# Create the final file
+touch "${final_file}"
 
 # Initialize counters for each container
 flag1=0
@@ -123,9 +125,6 @@ done
 
 echo "Writing contents to $final_file has been completed!"
 
-
-# Create the final file
-touch "${final_file}"
 
 echo
 
