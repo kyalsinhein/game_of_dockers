@@ -35,7 +35,7 @@ After cloning, your structure will look like:
 # Step 1: Clone Repository
 ```bash
 cd ~
-git clone <your-repo-url>
+git clone https://github.com/kyalsinhein/game_of_dockers.git
 # Creates: ~/game_of_dockers/ folder
 ```
 
