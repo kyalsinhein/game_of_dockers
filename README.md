@@ -30,6 +30,7 @@ cd <repo-folder>
 
 ### **2. Create test files**
 ```bash
+mkdir -p ~/docker-test/Docker{1,2,3}
 echo "Text from Container 1 - File 1" > ~/docker-test/Docker1/file1.txt
 echo "Text from Container 1 - File 2" > ~/docker-test/Docker1/file2.txt
 echo "Text from Container 2 - File 1" > ~/docker-test/Docker2/file3.txt
