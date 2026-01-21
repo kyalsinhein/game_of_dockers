@@ -46,11 +46,11 @@ cd ~/game_of_dockers
 
 ## Step 3: Configure Script Paths (!IMPORTANT)
 
-## Edit the script
+Edit the script
 ```bash
 nano game_of_dockers.sh
 ```
-## Change lines 6-8 to USE RELATIVE PATHS:
+Change lines 6-8 to USE RELATIVE PATHS:
 ```bash
 FILES_CONTAINER1="./docker-test/Docker1"
 FILES_CONTAINER2="./docker-test/Docker2"
@@ -64,7 +64,7 @@ mkdir -p ~/game_of_dockers/docker-test/Docker{1,2,3}
 
 ## Step 4: Create Test Files INSIDE Project Folder and paste these text to each file (!IMPORTANT)
 
-## Make file creating script executable
+Make file creating script executable
 ```bash
 chmod +x create_literary_files.sh
 ```
