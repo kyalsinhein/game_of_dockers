@@ -12,10 +12,13 @@ This script simulates a **distributed file processing system** where:
 - Interactive menu allows real-time text editing
 
 ## 📁 Project Structure
+
+```text
 ~/docker-test/
 ├── Docker1/file1.txt
 ├── Docker2/file2.txt
 └── Docker3/file3.txt
+```
 
 ## 🚀 Quick Start
 
