@@ -11,7 +11,7 @@ echo "Test from Container 2" > ~/docker-test/Docker2/file2.txt
 echo "Test from Container 3" > ~/docker-test/Docker3/file3.txt
 ```
 
-### **2. Update 3 lines in script
+### **2. Update 3 lines in script**
 Open gameofdockers.sh and change lines 6-8:
 
 ```bash
@@ -21,7 +21,7 @@ FILES_CONTAINER3="/home/YOUR_USERNAME/docker-test/Docker3"
 ```
 Replace YOUR_USERNAME with your username (run whoami to check)
 
-###  **3. Run the script
+###  **3. Run the script**
 ```bash
 chmod +x gameofdockers.sh
 sudo ./gameofdockers.sh
