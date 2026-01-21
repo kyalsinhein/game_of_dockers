@@ -121,7 +121,7 @@ It's a sin to kill a mockingbird.
 Walk through the storm, step by step.
 ```
 Save: Ctrl+X, Y, Enter
-```
+
 ## Step 5: Run the Script
 ```bash
 # Make script executable
