@@ -56,8 +56,7 @@ FILES_CONTAINER1="./docker-test/Docker1"
 FILES_CONTAINER2="./docker-test/Docker2"
 FILES_CONTAINER3="./docker-test/Docker3"
 ```
-Save: Ctrl+X, Y, Enter
-Then type
+Save: Ctrl+X, Y, Enter. Then type
 ```bash
 mkdir -p ~/docker-test/Docker{1,2,3}
 ```
