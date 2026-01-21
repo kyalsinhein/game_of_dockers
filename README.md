@@ -137,7 +137,7 @@ And you may make revelations that cost you dearly only to have people look at yo
 - Path errors? Check Step 2 paths are correct
 
 ## 🧹 Cleanup
-# Remove Docker containers
+# Remove Docker containers and Project Folder
 ```bash
 # Go to project folder
 cd ~/game_of_dockers
