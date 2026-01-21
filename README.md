@@ -57,20 +57,7 @@ FILES_CONTAINER3="./docker-test/Docker3"
 # Save: Ctrl+X, Y, Enter
 ```
 
-## Step 4: Create Test Files INSIDE Project Folder  (!IMPORTANT)
-```bash
-# Create folder structure INSIDE project folder
-mkdir -p docker-test/Docker{1,2,3}
-
-# Create test files (minimum 2 per container)
-echo "Text from Container 1 - File 1" > docker-test/Docker1/file1.txt
-echo "Text from Container 1 - File 2" > docker-test/Docker1/file2.txt
-echo "Text from Container 2 - File 1" > docker-test/Docker2/file3.txt
-echo "Text from Container 2 - File 2" > docker-test/Docker2/file4.txt
-echo "Text from Container 3 - File 1" > docker-test/Docker3/file5.txt
-echo "Text from Container 3 - File 2" > docker-test/Docker3/file6.txt
-```
-## After copy and paste these text to each file  (!IMPORTANT)
+# Step 4: Create Test Files INSIDE Project Folder and paste these text to each file (!IMPORTANT)
 ```bash
 nano  ~/game_of_dockers/docker-test/Docker1/file1.txt
 
