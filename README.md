@@ -58,6 +58,8 @@ FILES_CONTAINER3="./docker-test/Docker3"
 Save: Ctrl+X, Y, Enter
 
 ## Step 4: Create Test Files INSIDE Project Folder and paste these text to each file (!IMPORTANT)
+
+# For Docker 1
 ```bash
 nano  ~/game_of_dockers/docker-test/Docker1/file1.txt
 ```
@@ -81,6 +83,8 @@ The most important things lie too close to wherever your secret heart is buried,
 That's the worst, I think. When the secret stays locked within not for want of a teller but for want of an understanding ear.
 ```
 Save: Ctrl+X, Y, Enter
+
+# For Docker 2
 ```bash
 nano  ~/game_of_dockers/docker-test/Docker2/file3.txt
 ```
@@ -100,6 +104,8 @@ So all you can do is give in to it, step right inside the storm, closing your ey
 And you really will have to make it through that violent, metaphysical, symbolic storm. No matter how metaphysical or symbolic it might be, make no mistake about it: it will cut through flesh like a thousand razor blades.
 ```
 Save: Ctrl+X, Y, Enter
+
+# For Docker 3
 ```bash
 nano  ~/game_of_dockers/docker-test/Docker3/file5.txt
 ```
