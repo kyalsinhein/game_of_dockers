@@ -58,7 +58,7 @@ Then, run it
 ```bash
 ./create_literary_files.sh
 ```
-## Step 5: Run the Script
+## Step 5: Run the "game_of_dockers.sh"
 To run the script the current path need to be like this "/home/YOUR_USERNAME/game_of_dockers"
 (type "pwd" to look current location).Then, type
 ```bash
