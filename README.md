@@ -1,7 +1,6 @@
 # 🐳 Docker File Processor
 
-Bash script that processes files across 3 Docker containers using round-robin scheduling.
-
+**game_of_dockers** is a Bash script that automates multi-container file processing using Docker. It creates three Ubuntu containers, distributes text files among them, and implements a round-robin scheduling algorithm to process files in balanced batches. The script demonstrates practical DevOps skills by combining container orchestration, automation scripting, and interactive command-line management into a single showcase project perfect for technical portfolios.
 ## 🚀 3 Steps to Run
 
 ### **1. Create test files**
