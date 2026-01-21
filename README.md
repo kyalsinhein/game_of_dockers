@@ -37,8 +37,12 @@ cd ~
 # Make sure you're in home: pwd should show /home/YOUR_USERNAME
 git clone <your-repo-url>
 ```
+### **2. Create folder structure in home directory**
+```bash
+mkdir -p ~/docker-test/Docker{1,2,3}
+```
 
-### **2. Create test files**
+### **3. Create test files**
 ```bash
 echo "Text from Container 1 - File 1" > ~/docker-test/Docker1/file1.txt
 echo "Text from Container 1 - File 2" > ~/docker-test/Docker1/file2.txt
@@ -48,7 +52,7 @@ echo "Text from Container 3 - File 1" > ~/docker-test/Docker3/file5.txt
 echo "Text from Container 3 - File 2" > ~/docker-test/Docker3/file6.txt
 ```
 
-### **3. Update 3 lines in script**
+### **4. Update 3 lines in script**
 
 Open game_of_dockers.sh 
 ```bash
