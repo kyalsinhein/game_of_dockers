@@ -50,8 +50,7 @@ mkdir -p ~/game_of_dockers/docker-test/Docker{1,2,3}
 ```
 
 ## Step 4: Create the Literary Files.
-
-Make file creating script executable
+Make file creating script executable (This script file already included inside the project folder.)
 ```bash
 chmod +x create_literary_files.sh
 ```
