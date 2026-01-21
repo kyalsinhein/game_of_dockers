@@ -60,11 +60,8 @@ chmod +x create_literary_files.sh
 ./create_literary_files.sh
 ```
 ## Step 5: Run the Script
-To run the script the current path need to be like this (type "pwd" to look current location)
-```bash
-/home/YOUR_USERNAME/game_of_dockers
-```
-After that,
+To run the script the current path need to be like this "/home/YOUR_USERNAME/game_of_dockers"
+(type "pwd" to look current location).Then, type
 ```bash
 # Make script executable
 chmod +x game_of_dockers.sh
