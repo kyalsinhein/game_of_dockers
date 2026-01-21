@@ -61,7 +61,7 @@ FILES_CONTAINER3="./docker-test/Docker3"
 ```bash
 nano  ~/game_of_dockers/docker-test/Docker1/file1.txt
 ```
-# and paste this text
+and paste this text
 ```text
 That's why it's a sin to kill a mockingbird.
 "Your father's right," she said. "Mockingbirds don't do one thing except make music for us to enjoy.
@@ -73,7 +73,7 @@ Shoot all the blue jays you want, if you can hit 'em, but remember it's a sin to
 ```bash
 nano  ~/game_of_dockers/docker-test/Docker1/file2.txt
 ```
-# and paste this text
+and paste this text
 ```text
 The most important things are the hardest to say. They are the things you get ashamed of, because words diminish them — words shrink things that seemed limitless when they were in your head to no more than living size when they're brought out.
 The most important things lie too close to wherever your secret heart is buried, like landmarks to a treasure your enemies would love to steal away.
@@ -83,7 +83,7 @@ That's the worst, I think. When the secret stays locked within not for want of a
 ```bash
 nano  ~/game_of_dockers/docker-test/Docker2/file3.txt
 ```
-# and paste this text
+and paste this text
 ```text
 But it's more than that, isn't it? But one thing is certain. When you come out of the storm you won't be the same person who walked in. That's what this storm's all about.
 Why? Because this storm isn't something that blew in from far away, something that has nothing to do with you. This storm is you. Something inside of you. And once the storm is over you won't remember how you made it through, how you managed to survive. You won't even be sure, in fact, whether the storm is really over.
@@ -92,7 +92,7 @@ Why? Because this storm isn't something that blew in from far away, something th
 ```bash
 nano  ~/game_of_dockers/docker-test/Docker2/file4.txt
 ```
-# and paste this text
+and paste this text
 ```text
 "Sometimes fate is like a small sandstorm that keeps changing directions. You change direction but the sandstorm chases you. You turn again, but the storm adjusts. Over and over you play this out, like some ominous dance with death just before dawn."
 So all you can do is give in to it, step right inside the storm, closing your eyes and plugging up your ears so the sand doesn't get in, and walk through it, step by step. There's no sun there, no moon, no direction, no sense of time. Just fine white sand swirling up into the sky like pulverized bones. That's the kind of sandstorm you need to imagine.
@@ -102,7 +102,7 @@ And you really will have to make it through that violent, metaphysical, symbolic
 ```bash
 nano  ~/game_of_dockers/docker-test/Docker3/file5.txt
 ```
-# and paste this text
+and paste this text
 ```text
 People will bleed there, and you will bleed too. Hot, red blood. You'll catch that blood in your hands, your own blood and the blood of others.
 And you may make revelations that cost you dearly only to have people look at you in a funny way, not understanding what you've said at all, or why you thought it was so important that you almost cried while you were saying it.
@@ -111,6 +111,7 @@ And you may make revelations that cost you dearly only to have people look at yo
 ```bash
 nano  ~/game_of_dockers/docker-test/Docker3/file6.txt
 ```
+and paste this text
 ```text
 Mockingbirds don't do one thing but sing their hearts out for us.
 The storm is you. Something inside of you.
