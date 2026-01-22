@@ -1,7 +1,8 @@
 # 🐳 Game of Dockers – Multi-Container File Processor
 
-A Bash script that demonstrates **round-robin file processing across multiple Docker containers**.  
-It creates three Ubuntu containers, distributes text files among them, and merges their contents into a single file using a balanced scheduling algorithm.
+This script implements a distributed file processing system using a 
+batch cyclic algorithm. Files are processed in fixed batches of 2 files
+per container per cycle, following a sequential container order.
 
 ## 🎯 Purpose
 
