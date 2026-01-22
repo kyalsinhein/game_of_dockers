@@ -15,9 +15,9 @@ This script simulates a **distributed file processing system** where:
 
 ```text
 /home/YOUR_USERNAME/
-└── game_of_dockers/         # Project folder (created by git clone)
+└── game_of_dockers/         # Project folder
     ├── game_of_dockers.sh   # Main script file
-    ├── docker-test/         # Test files directory (create this)
+    ├── docker-test/         # Test files directory 
     │   ├── Docker1/         # Files for first container
     │   │   ├── file1.txt   # Sorted by size (smallest first)
     │   │   └── file2.txt
