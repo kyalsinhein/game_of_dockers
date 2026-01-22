@@ -13,7 +13,6 @@ This script simulates a **distributed file processing system** where:
 
 ## 📁 Project Structure
 
-After cloning, your structure will look like:
 ```text
 /home/YOUR_USERNAME/
 └── game_of_dockers/         # Project folder (created by git clone)
