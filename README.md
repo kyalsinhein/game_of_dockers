@@ -54,7 +54,7 @@ Make file creating script executable (This script file already included inside t
 ```bash
 chmod +x create_literary_files.sh
 ```
-Then, run it
+Then, run 
 ```bash
 ./create_literary_files.sh
 ```
